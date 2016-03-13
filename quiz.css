@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13-Mar-2016, 5:41:01 AM
+    Author     : Eric
+*/
+
+* {
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+body {
+    background-color: lightblue;
+    background-image: url(images/WorldModern.jpg);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+#header1 {
+    color: blue;
+    font-size: 400%;
+}

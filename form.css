@@ -1,0 +1,41 @@
+/* 
+    Created on : 12-Mar-2016, 10:41:20 PM
+    Author     : Eric
+*/
+
+/* 2.3.3b form style*/	
+input[type="text"] {
+	border: solid 1px #dcdcdc;
+	transition: box-shadow 0.3s, border 0.3s;
+}
+input[type="text"]:focus, input[type="text"].focus {
+	border: solid 1px #707070;
+	box-shadow: 0 0 5px 1px #969696;
+}
+
+/*2.3.3d inline validation*/
+input:focus:required:invalid {
+  background-color: red;
+}
+input:required:valid {
+  background-color: green;
+}
+
+* {
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+body {
+    background-color: lightblue;
+    background-image: url(images/WorldModern.jpg);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+#header1 {
+    color: blue;
+    font-size: 400%;
+}

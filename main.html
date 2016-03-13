@@ -6,23 +6,115 @@ and open the template in the editor.
 -->
 <html>
     <head>
+        <link rel="shortcut icon" href=""> <!-- This reads as an error, but my 
+                                                IDE will not load the pages
+                                                without this line of HTML.
+                                           -->
         <title>A Walk Through Time</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Victoria based humanist association and non-profit organization.">
+        <meta name="keywords" content="humanism, atheism, science, Victoria, secularism">
+        <meta name="author" content="Victoria Secular Humanist Association">
+
+        <style type="text/css">
+            #shortlist_title {
+                text-decoration: underline;
+                letter-spacing: 2px;
+                text-transform: capitalize;
+                font-variant: small-caps;
+                text-shadow: 0 0 3px #ffff00, 0 0 5px #ff0000;
+            }
+            
+            #shortlist_title, #shortlist_carboniferous, #shortlist_permian, #shortlist_mesozoic, #shortlist_paleocene, 
+            #shortlist_eocoene, #shortlist_oligocene, #shortlist_miocene, #shortlist_pliocene, #shortlist_pleistocene,
+            #shortlist_holocene {
+                text-align: center;
+                font-family: Verdana, sans-serif;
+                font-weight: bold;
+            }
+            
+            #carboniferous, #permian, #mesozoic, #paleocene, #eocene, #oligocene, 
+            #miocene, #pliocene, #pleistocene, #holocene {
+                text-align: center;
+                font-size: 200%;
+                font-family: Verdana, sans-serif;
+                font-weight: bold;
+            }
+            
+            #carboniferous_image, #permian_image, #mesozoic_image, #paleocene_image, #eocene_image, #oligocene_image, 
+            #miocene_image, #pliocene_image, #pleistocene_image, #holocene_image {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;  
+            } 
+            
+            body {
+                background-color: rgba(60, 216, 222, 0.9);
+                background-color: -webkit-rgba(0,0, 0, 0.9);
+                background-color: -moz-rgba(0,0, 0, 0.9);
+            } 
+            
+            .kern { 
+                letter-spacing: -0.06em;
+            }
+            
+            /* 2.3.2i - drop cap*/
+        #shortlist_title::first-letter {
+	float: none;
+	line-height: 5px;
+        font-size: 270%;
+        color: #0000000;
+	padding: 10px;
+	margin-left: 10px;
+        }
+        
+        footer {
+            font-family: Verdana, sans-serif;
+        }
+            
+        </style>
     </head>
     <body>
-        <div>Ediacaran</div>
-        <div>Cambrian</div>
-        <div>Ordovician</div>
-        <div>Silurian</div>
-        <div>Devonian</div>
-        <div>Carboniferous</div>
-        <div>Permian</div>
-        <div>Triassic</div>
-        <div>Jurassic</div>
-        <div>Cretaceous</div>
-        <div>Paleogene</div>
-        <div>Neogene</div>
-        <div>Quaternary</div>
+        <header><h1 id="header1" style="color:blue;text-align: center;font-family: Verdana, sans-serif;
+                font-weight: bold; font-size: 400%;">Geolog<span class="kern">ic</span>al Periods</h1></header>
+        <div id="shortlist_title">Short List</div>
+        <br>
+        <div id="shortlist_carboniferous"><a href="#carboniferous">Carboniferous</a></div>
+        <div id="shortlist_permian"><a href="#permian">Permian</a> </div>
+        <div id="shortlist_mesozoic"><a href="#mesozoic">Mesozoic</a> </div>
+        <div id="shortlist_paleocene"><a href="#paleocene">Paleocene</a> </div>
+        <div id="shortlist_eocoene"><a href="#eocene">Eocene</a> </div>
+        <div id="shortlist_oligocene"><a href="#oligocene">Oligocene</a> </div>
+        <div id="shortlist_miocene"><a href="#miocene">Miocene</a> </div>
+        <div id="shortlist_pliocene"><a href="#pliocene">Pliocene</a> </div>
+        <div id="shortlist_pleistocene"><a href="#pleistocene">Pleistocene</a> </div>
+        <div id="shortlist_holocene"><a href="#holocene">Holocene</a> </div>
+        <br>
+        <div id="carboniferous"><a href="periods/carboniferous.html">Carboniferous</a></div>
+        <a href="periods/carboniferous.html"><img src="images/carboniferous.jpg" id="carboniferous_image" alt="carboniferous image"></a>
+        <div id="permian"><a href="periods/permian.html">Permian</a></div>
+        <a href="periods/permian.html"><img src="images/permian.jpg" id="permian_image" alt="permian image"></a>        
+        <div id="mesozoic"><a href="periods/mesozoic.html">Mesozoic</a></div>
+        <a href="periods/mesozoic.html"><img src="images/mesozoic.jpg" id="mesozoic_image" alt="mesozoic image"></a>
+        <div id="paleocene"><a href="periods/paleocene.html">Paleocene</a></div>
+        <a href="periods/paleocene.html"><img src="images/paleocene.jpg" id="paleocene_image" alt="paleocene image"></a>
+        <div id="eocene"><a href="periods/eocene.html">Eocene</a></div>
+        <a href="periods/eocene.html"><img src="images/eocene.jpg" id="eocene_image" alt="eocene image"></a>
+        <div id="oligocene"><a href="periods/oligocene.html" >Oligocene</a></div>
+        <a href="periods/oligocene.html"><img src="images/oligocene.gif" id="oligocene_image" alt="oligocene image"></a>
+        <div id="miocene"><a href="periods/miocene.html" >Miocene</a></div>
+        <a href="periods/miocene.html"><img src="images/miocene.jpg" id="miocene_image" alt="miocene image"></a>
+        <div  id="pliocene"><a href="periods/pliocene.html">Pliocene</a></div>
+        <a href="periods/pliocene.html"><img src="images/pliocene.jpg" id="pliocene_image" alt="pliocene image"></a>
+        <div id="pleistocene"><a href="periods/pleistocene.html" >Pleistocene</a></div>
+        <a href="periods/pleistocene.html"><img src="images/pleistocene.jpg" id="pleistocene_image" alt="pliestocene image"></a>
+        <div id="holocene"><a href="periods/holocene.html" >Holocene</a></div>
+        <a href="periods/holocene.html"><img src="images/holocene.jpg" id="holocene_image" alt="holocene image"></a>
+        <footer>
+            <script>
+                document.write("This page was last modified on: " + document.lastModified +"");
+            </script>
+        </footer>
     </body>
 </html>

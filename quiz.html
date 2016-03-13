@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="shortcut icon" href="">
+        <title>Quiz Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="quiz.css" rel="stylesheet" />
+        <script src="quiz.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1 id="header1">Quiz Page</h1>
+        <br><br>
+        
+            <label>1. Do you know which geological period corresponds to the number of years ago generated?</label>
+            <br><br>
+            <div id="years_ago">0</div>
+            <br>
+            <input id="geological_age_input" name="name" type="text" pattern="[A-Za-z-0-9]"
+                   placeholder="Your guess goes here." required/>
+            <br>
+            <button onclick="getQ1input(), checkAnser(), printScore()">Check Answer</button>
+            <div id="wrong_or_right"></div>
+            <br>
+            <button onclick="yearsAgo()">Try again.</button>
+        
+        <br><br>
+        <footer><a href="main.html">Go back to the main page.</a></footer>
+    </body>
+</html>
