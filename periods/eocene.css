@@ -26,11 +26,18 @@ body {
     font-weight: bold;
 }
 
-
+/*2.3.2.8 rounded corners*/
 #eocene_image {
     display: block;
     margin-left: auto;
-    margin-right: auto;  
+    margin-right: auto;
+    border-radius: 25px;
+    padding: 20px; 
+    
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    
+
 }
 
 #p1, #p2, #p3 {

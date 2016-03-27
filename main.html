@@ -9,31 +9,40 @@ and open the template in the editor.
         <link rel="shortcut icon" href=""> <!-- This reads as an error, but my 
                                                 IDE will not load the pages
                                                 without this line of HTML.
-                                           -->
+        -->
         <title>A Walk Through Time</title>
-        <meta charset="UTF-8">
+        <!--2.3.1.9 use of the meta character set -->
+        <meta id="meta" charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Victoria based humanist association and non-profit organization.">
         <meta name="keywords" content="humanism, atheism, science, Victoria, secularism">
         <meta name="author" content="Victoria Secular Humanist Association">
-
-        <style type="text/css">
+        <!--2.3.2.3 internal style sheet -->
+        <!--2.3.2.5 use of rgba and hlsa -->
+        <!--2.3.2.6 format of text -->
+        <!--2.3.2.9 #shortlist_title drop cap -->
+        <!--2.3.2.11 using div an span -->
+        <!--2.3.2.12 use of float -->
+        <!--2.3.2.13 use of a web font -->
+        <!--2.3.2.14 use of text shadows -->
+        <style id="style" type="text/css">
             #shortlist_title {
                 text-decoration: underline;
                 letter-spacing: 2px;
                 text-transform: capitalize;
                 font-variant: small-caps;
+                /* 2.3.2.14 use of text shadow */ 
                 text-shadow: 0 0 3px #ffff00, 0 0 5px #ff0000;
             }
-            
+            /* 2.3.2.13 use of a web font */ 
             #shortlist_title, #shortlist_carboniferous, #shortlist_permian, #shortlist_mesozoic, #shortlist_paleocene, 
             #shortlist_eocoene, #shortlist_oligocene, #shortlist_miocene, #shortlist_pliocene, #shortlist_pleistocene,
-            #shortlist_holocene {
+            #shortlist_holocene, #quiz, #contact, #info {
                 text-align: center;
                 font-family: Verdana, sans-serif;
                 font-weight: bold;
             }
-            
+
             #carboniferous, #permian, #mesozoic, #paleocene, #eocene, #oligocene, 
             #miocene, #pliocene, #pleistocene, #holocene {
                 text-align: center;
@@ -41,46 +50,57 @@ and open the template in the editor.
                 font-family: Verdana, sans-serif;
                 font-weight: bold;
             }
-            
+
             #carboniferous_image, #permian_image, #mesozoic_image, #paleocene_image, #eocene_image, #oligocene_image, 
             #miocene_image, #pliocene_image, #pleistocene_image, #holocene_image {
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;  
+                display: block;
+                margin-left: auto;
+                margin-right: auto;  
             } 
-            
+            /* 2.3.2.5 use of rgba*/
+            /* 2.3.2.5 progressive enhancement for colors*/
             body {
                 background-color: rgba(60, 216, 222, 0.9);
                 background-color: -webkit-rgba(0,0, 0, 0.9);
                 background-color: -moz-rgba(0,0, 0, 0.9);
             } 
-            
+
             .kern { 
                 letter-spacing: -0.06em;
             }
-            
+
             /* 2.3.2i - drop cap*/
-        #shortlist_title::first-letter {
-	float: none;
-	line-height: 5px;
-        font-size: 270%;
-        color: #0000000;
-	padding: 10px;
-	margin-left: 10px;
-        }
-        
-        footer {
-            font-family: Verdana, sans-serif;
-        }
-            
+            /* 2.3.2.12 use of float */
+            #shortlist_title::first-letter {
+                float: none;
+                line-height: 5px;
+                font-size: 270%;
+                color: #0000000;
+                padding: 10px;
+                margin-left: 10px;
+            }
+
+            footer {
+                font-family: Verdana, sans-serif;
+            }
+
+            #systemDATE{
+                float: right;
+            }
+
         </style>
     </head>
-    <body>
+    <body onload="footer_script">
+        <!--2.3.1.1 header groups -->
+        <!--2.3.1.6 header marked correctly -->
+        <!--2.3.2.1 inline CSS styling -->
         <header><h1 id="header1" style="color:blue;text-align: center;font-family: Verdana, sans-serif;
-                font-weight: bold; font-size: 400%;">Geolog<span class="kern">ic</span>al Periods</h1></header>
+                    font-weight: bold; font-size: 400%;">Geolog<span class="kern">ic</span>al Periods</h1></header>
         <div id="shortlist_title">Short List</div>
         <br>
+        <!--2.3.1.2 use of anchor references -->
         <div id="shortlist_carboniferous"><a href="#carboniferous">Carboniferous</a></div>
+        <!--2.3.1.4 hot spot to skip to another part of the page -->
         <div id="shortlist_permian"><a href="#permian">Permian</a> </div>
         <div id="shortlist_mesozoic"><a href="#mesozoic">Mesozoic</a> </div>
         <div id="shortlist_paleocene"><a href="#paleocene">Paleocene</a> </div>
@@ -91,7 +111,9 @@ and open the template in the editor.
         <div id="shortlist_pleistocene"><a href="#pleistocene">Pleistocene</a> </div>
         <div id="shortlist_holocene"><a href="#holocene">Holocene</a> </div>
         <br>
+        <!--2.3.1.4 hot spot to skip to another page on the site -->
         <div id="carboniferous"><a href="periods/carboniferous.html">Carboniferous</a></div>
+        <!--2.3.1.5 inline image -->
         <a href="periods/carboniferous.html"><img src="images/carboniferous.jpg" id="carboniferous_image" alt="carboniferous image"></a>
         <div id="permian"><a href="periods/permian.html">Permian</a></div>
         <a href="periods/permian.html"><img src="images/permian.jpg" id="permian_image" alt="permian image"></a>        
@@ -111,10 +133,39 @@ and open the template in the editor.
         <a href="periods/pleistocene.html"><img src="images/pleistocene.jpg" id="pleistocene_image" alt="pliestocene image"></a>
         <div id="holocene"><a href="periods/holocene.html" >Holocene</a></div>
         <a href="periods/holocene.html"><img src="images/holocene.jpg" id="holocene_image" alt="holocene image"></a>
+        <br><br>
+        <!--2.3.1.3 link to additional info about the business -->
+        <div id="info"><a href="http://victoriasecularhumanists.ca/about-us/">More information about the VSHA.</a></div>
+        <br><br>
+        <div id="contact"><a href="form.html">Contact Form Page</a></div>
+        <!--2.3.1.5 line break -->
+        <br id="break">
+        <div id="quiz"><a href="quiz.html">Quiz Page</a></div>
         <footer>
-            <script>
-                document.write("This page was last modified on: " + document.lastModified +"");
+            <!--2.3.1.10 footer with last modified -->
+            <!--2.3.6.1 running time commands -->
+            <script id="footer_script">
+                document.write("This page was last modified on: " + document.lastModified + "");
+
+
+                addEventListener("load", function () {
+                    setInterval(function () {
+
+                    var date = new Date()
+
+                    var systemDATE = document.getElementById("systemDATE");
+
+                    
+                        systemDATE.textContent = date;
+                    }, 1000);
+
+                });
+
+
             </script>
+
         </footer>
+        <!--2.3.6.2 display system date -->
+        <div id="systemDATE" onload="setSystemDate();"></div>
     </body>
 </html>

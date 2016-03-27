@@ -1,0 +1,9 @@
+To navigate this site, begin from main.html and follow the links to the other parts of the site. 
+
+Each geological age page (carboniferous.html, eocene.html, holocene.html etc.) links back to the main page. 
+
+From the main page, you can reach every other page on the site, and every page on the site links to the main page. 
+
+There are external inks to berkely.edu on the periods pages that do not link back to the site. 
+
+The documents that have the websites, download sites, and evaluation are in the Documents folder. 

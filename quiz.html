@@ -16,20 +16,39 @@ and open the template in the editor.
     <body>
         <h1 id="header1">Quiz Page</h1>
         <br><br>
-        
-            <label>1. Do you know which geological period corresponds to the number of years ago generated?</label>
-            <br><br>
-            <div id="years_ago">0</div>
-            <br>
-            <input id="geological_age_input" name="name" type="text" pattern="[A-Za-z-0-9]"
-                   placeholder="Your guess goes here." required/>
-            <br>
-            <button onclick="getQ1input(), checkAnser(), printScore()">Check Answer</button>
-            <div id="wrong_or_right"></div>
-            <br>
-            <button onclick="yearsAgo()">Try again.</button>
-        
+
+        <label>1. Do you know which geological period corresponds to the number of years ago generated?</label>
         <br><br>
+        <div id="years_ago">0</div>
+        <br>
+        <input id="geological_age_input" name="name" type="text" pattern="[A-Za-z-0-9]"
+               placeholder="Your guess goes here." required/>
+        <br>
+        <button onclick="getQ1input(), checkAnser(), printScore()">Check Answer</button>
+        <div id="wrong_or_right"></div>
+        <br>
+        <button onclick="yearsAgo()">Try again.</button>
+
+        <br><br>
+        <h2>Possible Answers</h2>
+        <!--2.3.1.7 unordered list -->
+        <ul id="listmain">
+            <li id="list"></li>
+        </ul> 
+        <br><br>
+        <label>2. Are you old enough to join VSHA?</label>
+        <br>
+        <label>Enter Age:</label>
+        <br>
+        <input name="age" id="age" type="number">
+        <br>
+        <button onclick="checkAge()">Check Eligibility</button>
+        <br>
+        <div id="age_answer"></div>
+        <br><br>
+        
+        
+
         <footer><a href="main.html">Go back to the main page.</a></footer>
     </body>
 </html>

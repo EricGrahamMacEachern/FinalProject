@@ -26,3 +26,8 @@ body {
     color: blue;
     font-size: 400%;
 }
+
+body > ul li {
+    text-align: center;
+    list-style-type:none;
+}

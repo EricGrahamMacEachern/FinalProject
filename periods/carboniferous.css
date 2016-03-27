@@ -7,7 +7,7 @@ and open the template in the editor.
     Created on : 1-Mar-2016, 9:56:39 PM
     Author     : Eric
 */
-
+/*2.3.2.10 define document properties */
 #header1 {
     color:blue;
     text-align: center;
@@ -18,10 +18,11 @@ and open the template in the editor.
 
 body {
     background-color: lightblue;
-    background-image: url(http://localhost:8383/COMP%202681/FinalProject/images/WorldCarboniferous.jpg);
+    background-image: url(../images/WorldCarboniferous.jpg);
     background-size: 100px 100px;
     background-repeat: no-repeat;
     background-position: left top;
+
     
    
 } 
@@ -39,8 +40,11 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    /* 2.3.2.15 transform rotate */
     transform: rotate(0.25deg);
+    /* 2.3.2.16 reduce opacity */
     opacity: 0.5;
+    border-style:solid;
 }
 
 #p1, #p2, #p3 {
@@ -51,7 +55,7 @@ body {
     font-weight: bold;
     font-style: oblique;
 }
-
+/*2.3.2.7 use of hyperlink pseudo-classes*/
 a:link    { color: red }    /* unvisited links */
 a:visited { color: blue }   /* visited links   */
 a:hover   { color: yellow } /* user hovers     */
